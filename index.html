@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naila Olivia Ramadhani - Portfolio</title>
+  <meta name="description"
+    content="Informatics Student & Aspiring Cybersecurity Specialist. Portfolio of Naila Olivia Ramadhani." />
+  <link rel="stylesheet" href="/src/styles/index.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <!-- Cinematic Intro -->
+  <div id="intro-overlay">
+    <h2 class="float-1" style="font-size: 2rem; letter-spacing: 4px; color: var(--text-primary);">N O R .</h2>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- Cursor Glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Background Particles -->
+  <div id="particles-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="glass-nav">
+    <div class="nav-content">
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+          <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button id="mobile-menu-toggle" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay"></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content reveal">
+      <div class="profile-container float-1">
+        <div class="profile-ring"></div>
+        <img src="/assets/images/profile.jpg" alt="Naila Olivia Ramadhani" class="profile-img" loading="lazy" />
+      </div>
+      <div class="hero-text parallax-text">
+        <h1>Hi, I'm Naila Olivia Ramadhani.</h1>
+        <h2 class="hero-subtitle gradient-text">Tech Enthusiast & Informatics Undergraduate</h2>
+        <div class="sub-highlight float-delay-1 float-2">
+          <p>Head of Information & Creative Media @ PUMA Informatics | Head of Recruitment & Engagement @ Jabar Bergerak
+            Zillenial</p>
+          <p class="academic-highlight">Jababeka Scholarship Awardee Rank-2 (75%) | GPA 3.72</p>
+        </div>
+        <div class="hero-actions float-delay-2 float-3">
+          <a href="#projects" class="btn btn-glow">View Projects</a>
+          <a href="/assets/documents/cv.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-title reveal">
+      <h2>My Skills</h2>
+      <p>Tools and languages I use to build and break.</p>
+    </div>
+    <div class="skills-grid reveal">
+      <!-- Technical Skills -->
+      <div class="skill-card glass-card reveal-child">
+        <div class="skill-header">
+          <i data-lucide="code-2" class="skill-icon"></i>
+          <h3>Technical Skills</h3>
+        </div>
+        <p class="skill-subtitle">Languages & Database</p>
+        <div class="tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Java</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Python</span>
+          <span class="tag">C/C++</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+
+      <!-- Tools & Technology -->
+      <div class="skill-card glass-card reveal-child">
+        <div class="skill-header">
+          <i data-lucide="wrench" class="skill-icon"></i>
+          <h3>Tools & Tech</h3>
+        </div>
+        <p class="skill-subtitle">Development & Security</p>
+        <div class="tags">
+          <span class="tag tool">GitHub</span>
+          <span class="tag tool">VS Code</span>
+          <span class="tag tool">Firebase</span>
+          <span class="tag tool">Kali Linux</span>
+          <span class="tag tool">VirtualBox</span>
+          <span class="tag tool">Burp Suite</span>
+          <span class="tag tool">Autopsy</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card glass-card reveal-child">
+        <div class="skill-header">
+          <i data-lucide="users" class="skill-icon"></i>
+          <h3>Soft Skills</h3>
+        </div>
+        <p class="skill-subtitle">Professional Growth</p>
+        <div class="tags">
+          <span class="tag soft">Communication</span>
+          <span class="tag soft">Public Speaking</span>
+          <span class="tag soft">Team Collaboration</span>
+          <span class="tag soft">Problem Solving</span>
+          <span class="tag soft">Adaptability</span>
+          <span class="tag soft">Creative Thinking</span>
+          <span class="tag soft">Time Management</span>
+        </div>
+      </div>
+
+      <!-- Digital & Marketing Skills -->
+      <div class="skill-card glass-card reveal-child">
+        <div class="skill-header">
+          <i data-lucide="megaphone" class="skill-icon"></i>
+          <h3>Digital & Marketing</h3>
+        </div>
+        <p class="skill-subtitle">Content & Strategy</p>
+        <div class="tags">
+          <span class="tag marketing">Content Creation</span>
+          <span class="tag marketing">Social Media Management</span>
+          <span class="tag marketing">Digital Marketing Basics</span>
+          <span class="tag marketing">Content Planning</span>
+          <span class="tag marketing">Social Media Strategy</span>
+          <span class="tag marketing">Technical Writing</span>
+          <span class="tag marketing">Security Management</span>
+        </div>
+      </div>
+
+      <!-- Other Tools -->
+      <div class="skill-card glass-card reveal-child">
+        <div class="skill-header">
+          <i data-lucide="layers" class="skill-icon"></i>
+          <h3>Other Tools</h3>
+        </div>
+        <p class="skill-subtitle">Productivity & Design</p>
+        <div class="tags">
+          <span class="tag other">Microsoft Office</span>
+          <span class="tag other">Google Workspace</span>
+          <span class="tag other">Capcut</span>
+          <span class="tag other">Canva</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-title reveal">
+      <h2>Featured Projects</h2>
+      <p>A selection of my recent work in dev & security.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card glass-card reveal tilt-card">
+        <div class="project-info reveal-child">
+          <h3>President's Cupid</h3>
+          <p>Web-based platform for user interaction and engagement built with PHP and JavaScript.</p>
+          <button class="details-toggle">
+            VIEW DETAILS <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+          </button>
+          <div class="details-content">
+            <div class="project-contributions">
+              <h4>My Contributions</h4>
+              <ul>
+                <li>Manage the platform’s digital assets, ensure that all user-facing content is engaging and aligns
+                  with the brand identity, and integrate it into system prototypes.</li>
+                <li>Reached 15,000+ views and 45,000%+ growth within 30 days, with 83% new users from non-followers.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://president-cupid.wuaze.com" target="_blank" rel="noopener noreferrer"
+              class="btn btn-live-view btn-sm">
+              LIVE VIEW <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;"></i>
+            </a>
+            <a href="https://github.com/fullsunnys/President-s-Cupid" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">GitHub</a>
+            <a href="/assets/documents/project-reports/prescupid.pdf" class="btn btn-sm lightbox-trigger"
+              data-title="President's Cupid Report">Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal tilt-card">
+        <div class="project-info reveal-child">
+          <h3>PULC (President University Lost and Found)</h3>
+          <p>A community-driven digital platform facilitating the recovery of lost items on campus.</p>
+          <button class="details-toggle">
+            VIEW DETAILS <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+          </button>
+          <div class="details-content">
+            <div class="project-contributions">
+              <h4>My Contributions</h4>
+              <ul>
+                <li>Implemented secure user verification to ensure authentic campus usage.</li>
+                <li>Streamlined the lost-and-found workflow for better accessibility.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://campus-connect-web-sigma.vercel.app" target="_blank" rel="noopener noreferrer"
+              class="btn btn-live-view btn-sm">
+              LIVE VIEW <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;"></i>
+            </a>
+            <a href="https://github.com/fullsunnys/PULC-Lost-and-Found-" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">GitHub</a>
+            <a href="/assets/documents/project-reports/pulc.pdf" class="btn btn-sm lightbox-trigger"
+              data-title="PULC Report">Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal tilt-card">
+        <div class="project-info reveal-child">
+          <h3>ArenaGo</h3>
+          <p>Advanced system design showcasing full-stack capabilities and dynamic UI.</p>
+          <button class="details-toggle">
+            VIEW DETAILS <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+          </button>
+          <div class="details-content">
+            <div class="project-contributions">
+              <h4>My Contributions</h4>
+              <ul>
+                <li>Implemented Firebase for real-time data management and user authentication.</li>
+                <li>Developed a dynamic full-stack architecture to support various interaction modes.</li>
+                <li>Crafted a premium, responsive UI for seamless device compatibility.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/fullsunnys/Arena-Go" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">GitHub</a>
+            <a href="/assets/documents/project-reports/arenago.pdf" class="btn btn-sm lightbox-trigger"
+              data-title="ArenaGo Report">Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal tilt-card" style="transition-delay: 0.1s">
+        <div class="project-info reveal-child">
+          <h3>Hospital Management System</h3>
+          <p>A comprehensive healthcare management application built for efficiency.</p>
+          <button class="details-toggle">
+            VIEW DETAILS <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+          </button>
+          <div class="details-content">
+            <div class="project-contributions">
+              <h4>My Contributions</h4>
+              <ul>
+                <li>Architected the database schema to handle patient records and medical data efficiently.</li>
+                <li>Built a clean, intuitive dashboard for healthcare professionals.</li>
+                <li>Streamlined clinical workflows through automated data processing.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/fullsunnys/Hospital-Management-System" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">GitHub</a>
+            <a href="/assets/documents/project-reports/hms.pdf" class="btn btn-sm lightbox-trigger"
+              data-title="Hospital Management System Report">Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal tilt-card" style="transition-delay: 0.3s">
+        <div class="project-info reveal-child">
+          <h3>Euphony Seraphim</h3>
+          <p>Creative interactive web application focused on immersive user experience.</p>
+          <button class="details-toggle">
+            VIEW DETAILS <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+          </button>
+          <div class="details-content">
+            <div class="project-contributions">
+              <h4>My Contributions</h4>
+              <ul>
+                <li>Engineered immersive interactive elements for enhanced web experience.</li>
+                <li>Developed a unique visual identity through creative CSS and animations.</li>
+                <li>Focused on high-performance rendering for smooth user transitions.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="/assets/documents/project-reports/euphony.pdf" class="btn btn-sm lightbox-trigger"
+              data-title="Euphony Seraphim Report">Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal tilt-card" style="transition-delay: 0.4s">
+        <div class="project-info reveal-child">
+          <h3>Roblox Emergency Hospital</h3>
+          <p>Game development logic and structural programming within the Roblox engine.</p>
+          <button class="details-toggle">
+            VIEW DETAILS <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+          </button>
+          <div class="details-content">
+            <div class="project-contributions">
+              <h4>My Contributions</h4>
+              <ul>
+                <li>Designed and implemented complex game logic using Luau scripting.</li>
+                <li>Optimized engine performance for large-scale environment interactions.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="https://www.roblox.com/games/80329704015269/Emergency-Hospital-simulator" target="_blank"
+              rel="noopener noreferrer" class="btn btn-live-view btn-sm">
+              PLAY DEMO <i data-lucide="play-circle" style="width: 14px; height: 14px;"></i>
+            </a>
+            <a href="/assets/documents/project-reports/roblox.pdf" class="btn btn-sm lightbox-trigger"
+              data-title="Roblox Emergency Hospital Report">Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal tilt-card" style="transition-delay: 0.5s">
+        <div class="project-info reveal-child">
+          <h3>GRC & Security Platform</h3>
+          <p>Platform demonstrating security principles and automated risk assessment.</p>
+          <button class="details-toggle">
+            VIEW DETAILS <i data-lucide="chevron-down" style="width: 14px; height: 14px;"></i>
+          </button>
+          <div class="details-content">
+            <div class="project-contributions">
+              <h4>My Contributions</h4>
+              <ul>
+                <li>Implemented automated risk assessment algorithms for security compliance.</li>
+                <li>Applied core security principles to ensure data integrity and privacy.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-actions">
+            <a href="/assets/documents/project-reports/grc.pdf" class="btn btn-sm lightbox-trigger"
+              data-title="GRC & Security Platform Report">Docs</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Certifications & Experience Section -->
+  <section id="experience">
+    <div class="section-title reveal">
+      <h2>Experience & Certifications</h2>
+    </div>
+
+    <div class="timeline">
+      <!-- Certification -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card lightbox-trigger" data-title="BSSN Certification"
+          data-desc="Awareness of Social Cyber Attacks - National Cyber and Crypto Agency (BSSN)."
+          data-images='["/assets/images/certificates/cert1.jpg"]'>
+          <div class="tag reveal-child">Certification</div>
+          <h3 class="reveal-child">BSSN – Awareness of Social Cyber Attacks</h3>
+          <p class="reveal-child">Foundational knowledge in cybersecurity awareness and social engineering defense.</p>
+        </div>
+      </div>
+
+      <!-- Leadership - PUMA -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="tag reveal-child">Leadership</div>
+          <h3 class="reveal-child">PUMA Informatics (2024 - Present)</h3>
+          <h4 class="reveal-child">Head of Information and Creative Media Division</h4>
+          <ul class="reveal-child">
+            <li>Led a team of 6 in managing digital content and social media strategy.</li>
+            <li>Planned and organized content to improve audience engagement.</li>
+          </ul>
+          <br>
+          <h4 class="reveal-child">Member of Communication and Design Division (2024)</h4>
+        </div>
+      </div>
+
+      <!-- Leadership - JBZ -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="tag reveal-child">Leadership</div>
+          <h3 class="reveal-child">Jabar Bergerak Zillenial</h3>
+          <h4 class="reveal-child">Head of Recruitment & Engagement</h4>
+          <ul class="reveal-child">
+            <li>Managed recruitment process and engagement strategy.</li>
+            <li>Supported communication and digital engagement activities.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Organizational Activities & Volunteer Roles -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content no-glass">
+          <div class="tag reveal-child">Organizational Activities & Volunteer Roles</div>
+
+          <!-- Public Relations Brainstormics -->
+          <div class="minimalist-exp-item reveal-child lightbox-trigger" data-title="Public Relations - Brainstormics"
+            data-desc="Managing internal communications and public outreach for Brainstormics."
+            data-images='["/assets/images/experience/brainstormics.jpg"]'>
+            <div class="minimalist-exp-role">Brainstormics 2024 - Master of Ceremony</div>
+            <div class="minimalist-exp-company">PUMA Informatics Organization</div>
+            <div class="minimalist-exp-skills">
+              <span class="skill-pill">Internal Communications</span>
+              <span class="skill-pill">Public Speaking</span>
+            </div>
+          </div>
+
+          <div class="minimalist-exp-list">
+            <!-- PIC Public Relations Temu Alumni -->
+            <div class="minimalist-exp-item reveal-child lightbox-trigger"
+              data-title="PIC Public Relations - Temu Alumni"
+              data-desc="Coordinating public relations and communications for the alumni gathering event."
+              data-images='["/assets/images/experience/temu-alumni.jpg"]'>
+              <div class="minimalist-exp-role">PIC Public Relations - Temu Alumni 2025</div>
+              <div class="minimalist-exp-company">PUMA Informatics Organization</div>
+              <div class="minimalist-exp-skills">
+                <span class="skill-pill">Scriptwriting</span>
+                <span class="skill-pill">Public Speaking</span>
+                <span class="skill-pill">Event Management</span>
+              </div>
+            </div>
+
+            <!-- Exhibition Division Compsphere 2025 -->
+            <div class="minimalist-exp-item reveal-child lightbox-trigger"
+              data-title="Exhibition Division - Compsphere 2025"
+              data-desc="Leading exhibition planning and execution for Compsphere 2025."
+              data-images='["/assets/images/experience/exhibition.jpg"]'>
+              <div class="minimalist-exp-role">Exhibition Division - Compsphere 2025</div>
+              <div class="minimalist-exp-company">PUFA Computer Science Organization</div>
+              <div class="minimalist-exp-skills">
+                <span class="skill-pill">Event Management</span>
+                <span class="skill-pill">Public Relations</span>
+              </div>
+            </div>
+
+            <!-- Public Relation Bizconnect 2025 -->
+            <div class="minimalist-exp-item reveal-child lightbox-trigger"
+              data-title="Public Relation - Bizconnect 2025"
+              data-desc="Coordinating business relations and event communications."
+              data-images='["/assets/images/experience/bizconnect.jpg"]'>
+              <div class="minimalist-exp-role">Public Relation - Bizconnect 2025</div>
+              <div class="minimalist-exp-company">PUFA Computer Science Organization</div>
+              <div class="minimalist-exp-skills">
+                <span class="skill-pill">Scriptwriting</span>
+                <span class="skill-pill">Internal Communications</span>
+              </div>
+            </div>
+
+            <!-- CSGO 2025 -->
+            <div class="minimalist-exp-item reveal-child lightbox-trigger" data-title="CSGO 2025 - Master of Ceremony"
+              data-desc="Hosted faculty-level event with 100+ participants."
+              data-images='["/assets/images/experience/csgo.jpg"]'>
+              <div class="minimalist-exp-role">CSGO 2025 - Master of Ceremony</div>
+              <div class="minimalist-exp-company">PUFA Computer Science Organization</div>
+              <div class="minimalist-exp-skills">
+                <span class="skill-pill">Public Speaking</span>
+                <span class="skill-pill">Hosting</span>
+              </div>
+            </div>
+
+            <!-- Volunteer Grant of Hopes -->
+            <div class="minimalist-exp-item reveal-child lightbox-trigger" data-title="Volunteer - Grant of Hopes"
+              data-desc="Volunteering for social causes and community engagement."
+              data-images='["/assets/images/experience/goh.jpg"]'>
+              <div class="minimalist-exp-role">Volunteer - Grant of Hopes 2025</div>
+              <div class="minimalist-exp-company">President University Student Board (BEM) 2025</div>
+              <div class="minimalist-exp-skills">
+                <span class="skill-pill">Public Speaking</span>
+                <span class="skill-pill">Event Management</span>
+              </div>
+            </div>
+
+            <!-- BEM 2025 -->
+            <div class="minimalist-exp-item reveal-child lightbox-trigger"
+              data-title="BEM 2025 - PIC Public Relation Internal"
+              data-desc="Leading internal public relations for the Student Board."
+              data-images='["/assets/images/experience/pust.jpg"]'>
+              <div class="minimalist-exp-role">PIC of Public Relation Internal Division - PUST 2025</div>
+              <div class="minimalist-exp-company">President University Student Board (BEM) 2025</div>
+              <div class="minimalist-exp-skills">
+                <span class="skill-pill">Internal Communications</span>
+                <span class="skill-pill">Event Management</span>
+              </div>
+            </div>
+
+            <!-- MR & MS President University 2025 -->
+            <div class="minimalist-exp-item reveal-child lightbox-trigger"
+              data-title="MR & MS President University 2025 - Design Team"
+              data-desc="Created visual content for branding and digital promotion."
+              data-images='["/assets/images/experience/mrnms.jpg"]'>
+              <div class="minimalist-exp-role">Design Team - MR & MS President University 2025</div>
+              <div class="minimalist-exp-company">President University Student Board (BEM) 2025</div>
+              <div class="minimalist-exp-skills">
+                <span class="skill-pill">Graphic Design</span>
+                <span class="skill-pill">Branding</span>
+              </div>
+            </div>
+
+            <!-- Workshop Alumni 2026 -->
+            <div class="minimalist-exp-item reveal-child lightbox-trigger"
+              data-title="Workshop Alumni 2026 - Public Relation Member"
+              data-desc="Supported communication and coordination for the alumni workshop."
+              data-images='["/assets/images/experience/workshop.jpg"]'>
+              <div class="minimalist-exp-role">PR Internal - Workshop Alumni 2026</div>
+              <div class="minimalist-exp-company">PUMA Informatics Organization</div>
+              <div class="minimalist-exp-skills">
+                <span class="skill-pill">Public Relations</span>
+                <span class="skill-pill">Networking</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="glass-nav">
+    <div class="footer-content reveal">
+      <h2>Let's Connect</h2>
+      <div class="social-links">
+        <a href="http://www.linkedin.com/in/naila-olivia" target="_blank" rel="noopener noreferrer"
+          class="social-icon">LinkedIn</a>
+        <a href="https://github.com/fullsunnys" target="_blank" rel="noopener noreferrer" class="social-icon">GitHub</a>
+        <a href="mailto:naila.oliviaaa@gmail.com" class="social-icon">Email</a>
+      </div>
+      <p class="copyright">&copy; Naila Olivia Ramadhani Portfolio 2026</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="hidden">
+    <div class="lightbox-content glass-card">
+      <span class="close-lightbox">&times;</span>
+      <div id="lightbox-text">
+        <h2 id="lightbox-title"></h2>
+        <p id="lightbox-desc"></p>
+      </div>
+      <img id="lightbox-img" src="" alt="Expanded View" />
+      <iframe id="lightbox-iframe" src="" title="Document Viewer"></iframe>
+      <div id="lightbox-gallery" class="gallery-grid"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
