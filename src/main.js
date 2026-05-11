@@ -249,6 +249,7 @@ lightboxTriggers.forEach(trigger => {
         images.forEach(imgSrc => {
           const thumb = document.createElement('img');
           thumb.src = imgSrc;
+          thumb.loading = 'lazy';
           thumb.classList.add('gallery-item');
           thumb.addEventListener('click', () => {
             lightboxImg.src = imgSrc;
