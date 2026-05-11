@@ -218,6 +218,7 @@ const lightbox = document.getElementById('lightbox');
 const lightboxContent = lightbox.querySelector('.lightbox-content');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxIframe = document.getElementById('lightbox-iframe');
+const lightboxLoader = document.getElementById('lightbox-loader');
 const lightboxGallery = document.getElementById('lightbox-gallery');
 const lightboxTitle = document.getElementById('lightbox-title');
 const lightboxDesc = document.getElementById('lightbox-desc');
@@ -234,10 +235,18 @@ lightboxTriggers.forEach(trigger => {
     // Reset display
     lightboxImg.style.display = 'none';
     lightboxIframe.style.display = 'none';
+    lightboxLoader.style.display = 'block'; // Show loader
     lightboxGallery.innerHTML = '';
     lightboxTitle.innerText = title;
     lightboxDesc.innerText = desc;
     lightboxContent.classList.remove('active');
+
+    const hideLoader = () => {
+      lightboxLoader.style.display = 'none';
+    };
+
+    lightboxImg.onload = hideLoader;
+    lightboxIframe.onload = hideLoader;
 
     if (images.length > 0) {
       // If there's a gallery, show the first image primarily
@@ -252,6 +261,7 @@ lightboxTriggers.forEach(trigger => {
           thumb.loading = 'lazy';
           thumb.classList.add('gallery-item');
           thumb.addEventListener('click', () => {
+            lightboxLoader.style.display = 'block';
             lightboxImg.src = imgSrc;
           });
           lightboxGallery.appendChild(thumb);
@@ -260,9 +270,14 @@ lightboxTriggers.forEach(trigger => {
     } else if (source.endsWith('.pdf')) {
       lightboxIframe.src = source;
       lightboxIframe.style.display = 'block';
+      // UI Optimization: Add a direct link for mobile users
+      lightboxDesc.innerHTML = desc + `<br><a href="${source}" target="_blank" class="download-link"><i data-lucide="download" style="width: 14px; height: 14px; vertical-align: middle; margin-right: 5px;"></i> Download / Open Full Document</a>`;
+      initLucide(); // re-init icons for the new link
     } else if (source) {
       lightboxImg.src = source;
       lightboxImg.style.display = 'block';
+    } else {
+      hideLoader(); // Nothing to load
     }
     
     lightbox.classList.remove('hidden');
